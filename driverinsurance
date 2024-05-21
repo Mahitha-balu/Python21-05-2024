@@ -1,0 +1,11 @@
+age = int(input("Enter the Age :"))
+g = input("Enter the Gender M/F :")
+ms = input("Enter the Marital Status U/M :")
+if( ms == 'M' or ms == 'm'):
+	print( "Driver should be Insured" )
+elif( ms == 'U' and g == 'M' and age > 30 or ms == 'u' and g == 'm' and age > 30 ):
+	print( "Driver should be Insured" )
+elif( ms == 'U' and g == 'F' and age > 25 or ms == 'u' and g == 'f' and age > 25 ):
+	print( "Driver should be Insured" )
+else:
+	print( "Driver should not be Insured" )
